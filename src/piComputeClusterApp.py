@@ -12,7 +12,7 @@ t0 = int(time.time() * 1000)
 
 session = SparkSession.builder \
     .appName("PySpark Pi with lambdas") \
-    .master("local[*]") \
+    .master("spark://py-master.ug25snstseouvb55pmkgu1gqqg.bx.internal.cloudapp.net:7077") \
     .getOrCreate()
 
 t1 = int(time.time() * 1000)
